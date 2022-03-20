@@ -24,7 +24,7 @@ export const ExhibitData = [
   },
   {
     title: "XIIth Florence Biennale 2019",
-    data: [{place: "Fortezza da Basso, Florence,Italy", date: "18th – 27th October 2019" , image: require('./assets/images/the_weaver.png')}]
+    data: [{place: "Fortezza da Basso, Florence, Italy", date: "18th – 27th October 2019" , image: require('./assets/images/the_weaver.png')}]
   },
 ]
 

@@ -19,13 +19,14 @@ const GenerateSectionList = (props) => {
   const renderSectionHeader = ({section: {title}}) => {
     return (
       <View style = {{flexDirection: 'row'}}>
-        <Text style = {[styles.header, {flex: 1}]}>{`\u2059 `}{title}</Text>
+        <Text style = {[styles.sectionHeader, {flex: 1}]}>{`\u2059 `}{title}</Text>
       </View>
     );
   }
 
   return(
     <SafeAreaView>
+      <Text style = {styles.mainTitle}>{props.mainTitle}: </Text>
       <SectionList
          sections = {props.data}
          keyExtractor = {(item, index) => item + index}
