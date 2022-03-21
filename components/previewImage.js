@@ -3,7 +3,9 @@ import { Text, View, Modal, TouchableOpacity, Image, Pressable} from 'react-nati
 import { styles } from '../utils/Styles';
 
 const PreviewImage = (props) => {
+
   const [modalVisible, setModalVisible] = useState(false);
+  
   return (
     <View>
       <Modal

@@ -1,14 +1,16 @@
 import React from 'react';
-import { Text, SafeAreaView, View, SectionList, TouchableOpacity, Image} from 'react-native';
+import { Text, SafeAreaView, View, SectionList } from 'react-native';
 import { styles } from '../utils/Styles';
 import PreviewImage from './previewImage';
+import LinkMention from './linkMention';
 
 const GenerateSectionList = (props) => {
+
   const renderItem = ({item}) => {
     return (
       <View style = {styles.itemView}>
         <View style = {styles.item}>
-          <Text>{'\u2058 '}{item.place}</Text>
+          <LinkMention item = {item}/>
           <Text>{'\u2058 '}{item.date}</Text>
         </View>
         <PreviewImage item = {item}/>

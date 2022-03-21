@@ -36,7 +36,7 @@ export const styles = StyleSheet.create({
  imgThumb: {
    width: 80,
    height: 80,
-   marginRight: 10,
+   margin: 10,
    borderRadius: 16
  },
  imgFullView: {
@@ -48,7 +48,7 @@ export const styles = StyleSheet.create({
    margin: 20,
    backgroundColor: 'white',
    borderRadius: 20,
-   padding: 15,
+   padding: 5,
    alignItems: 'center',
    shadowColor: '#000',
    shadowOffset: {
